@@ -1,0 +1,64 @@
+.tabla-page {
+    width: 900px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr;
+}
+
+.tabla-page .tabla-page__header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 5px;
+}
+
+.tabla-page .tabla-page__body {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.tabla-page .tabla-page__body .tabla-page__body-title {
+    display: flex;
+    justify-content: space-around;
+}
+.tabla-page .tabla-page__body .tabla-page__body-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla-page .tabla-page__body .tabla-page__body-info .tabla-page__body-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.delete-btn {
+    all: unset;
+    width: 70px;
+    height: 30px;
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: rgba(220, 20, 60, 0.496);
+}
+
+.delete-btn i {
+    font-size: 20px;
+}
